@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #111827;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  height: 70vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url("https://www.popsci.com/wp-content/uploads/2021/12/02/Organize-Computer-Program-Windows.jpeg")
+      center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero span {
+  color: #60a5fa;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+.dark {
+  background: #111827;
+  color: white;
+}
+
+/* ABOUT */
+.about-box {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-box img {
+  width: 220px;
+  border-radius: 50%;
+}
+
+/* PROJECTS */
+/* PROJECTS – CRISS CROSS */
+.project {
+  max-width: 1100px;
+  margin: 0 auto 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Reverse layout */
+.project.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Project image */
+.project img {
+  width: 45%;
+  max-width: 480px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease;
+}
+
+.project img:hover {
+  transform: scale(1.04);
+}
+
+/* Project text */
+.project-text {
+  width: 50%;
+  text-align: left;
+}
+
+.project-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.project-text p {
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* Buttons spacing */
+.project-text .btn {
+  margin-right: 10px;
+}
+
+/* Mobile view */
+@media (max-width: 900px) {
+  .project,
+  .project.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project img,
+  .project-text {
+    width: 100%;
+  }
+
+  .project-text {
+    text-align: center;
+  }
+}
+
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #2563eb;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.btn.small {
+  padding: 8px 18px;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid white;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  text-align: center;
+  background: #0f172a;
+  color: white;
+}
+
+.social a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.4rem;
+}
